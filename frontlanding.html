@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+
+<ng-view>
+<div class="float">
+    <div class="input-field">
+
+        <h1 class="input-field-inner">{{user.firstName}}</h1>
+        <p class="input-field-inner"> {{user.tagline}}
+
+        <p class="Bio">{{user.bio}}</p>
+
+    </div>
+
+
+
+    <div class="profile-pic float">
+        <div class="overlay"> </div>
+        <img class="tri-profile-pic"  ng-src="{{user.profileImg}}">
+
+        <img class="tri-background-pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzstpplHVhDaDrgMRkpq0aKM6K4PIfSo49edVZ-3rfrAYKG_Xf">
+    </div>
+</div>
+    <a href="#back">back</a>
+</ng-view>
+
+<script src="js/js.js"></script>
+<script src="js/router.js"></script>
+<script src="js/entryController.js"></script>
+<script src="js/newUserService.js"></script>
+
+</body>
+</html>

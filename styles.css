@@ -1,0 +1,84 @@
+*{
+    font-family: 'Lora', serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,0);
+    border-bottom: solid 1px darkgrey;
+    padding: 10px;
+}
+.input-field{
+    float: left;
+    display: block;
+    width: 40vw;
+    margin-top: 7vh;
+    margin-left: 8vw;
+
+
+}
+    ::-webkit-input-placeholder{
+        font-size: 18px;
+        font-family: 'Lora', serif;
+    }
+    .input-field-inner{
+        float: left;
+        padding-right: 24vw;
+        padding-bottom: 1vh;
+        margin-bottom: 2vh}
+    .Bio{
+        float: left;
+        padding-right: 24vw;
+        padding-bottom: 24vh;
+        margin-bottom: 2vh
+    }
+    .save-changes{
+        padding: 1vh 14vw;
+        background-color: aqua;
+        margin-left: 0.5vw;
+    }
+
+
+
+.profile-pic{
+    float: right;
+    margin: 10vh 8vw 10vh 0;
+
+}
+    .tri-profile-pic{
+
+        width: 40vw;
+        height: 60vh;
+        position: absolute;
+        z-index: 5;
+
+        -webkit-clip-path: polygon(65% 100%, 0 42%, 100% 28%);
+        clip-path: polygon(65% 100%, 0 42%, 100% 28%);
+      }
+    .overlay{
+        position: absolute;
+        z-index: 6;
+        -webkit-clip-path: polygon(65% 100%, 0 42%, 100% 28%);
+        clip-path: polygon(65% 100%, 0 42%, 100% 28%);
+        background-color: rgba(0, 255, 233, 0.39);
+        width: 40vw;
+        height: 60vh;
+    }
+
+    .tri-background-pic{
+        background-color: #000000;
+        opacity: 0.3;
+        width: 40vw;
+        height: 60vh;
+        -webkit-clip-path: polygon(57% 0, 0 60%, 100% 68%);
+        clip-path: polygon(57% 0, 0 60%, 100% 68%);
+    }
+
+footer{
+    padding-top: 12px;
+    border-top: solid grey 2px;
+    display: flex;
+    justify-content: space-around;
+    clear: both;
+}

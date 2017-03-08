@@ -1,14 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="internApp">
 
 <head>
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<title>DevMtin</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+
+
+
 </head>
 
-<body>
+<body ng-controller="entryPage">
+<nav><span><img src="images/Icons/Search.svg"></span> <span>DevMountain</span><span><img src="images/Icons/Ham.svg"></span></nav>
 
-  
+<ng-view>
+    <div class="float">
+        <div class="input-field">
+            <p style="text-align: center; padding-right: 10vw; padding-left: 4vw; font-size: 20px;">Welcome to <span style="color:#74fdf2">DevMountian </span> Social<br> Add Some Info So Friends Can Find You</p>
+            <input placeholder="Full Name" ng-model="firstName" class="input-field-inner">
+            <input placeholder="Tagline" class="input-field-inner" ng-model="tagline">
+            <input placeholder="Profile Image Url" class="input-field-inner" ng-model="profileImg">
+            <input placeholder="Bio" class="Bio" ng-model="bio">
+            <button href="#frontLanding" class="save-changes" ng-click="newProfile(firstName,tagline,profileImg,bio)">Save Changes</button>
+            <a href="#frontLanding">here</a>
+        </div>
+
+
+
+        <div class="profile-pic float">
+            <div class="overlay"> </div>
+                <img class="tri-profile-pic" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaxXjdStDqzXJ9FHyDzq6DEOZZOqOS8PMRzYEPe_HiZRe-3v6r" ng-src="{{}}">
+
+                <img class="tri-background-pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzstpplHVhDaDrgMRkpq0aKM6K4PIfSo49edVZ-3rfrAYKG_Xf">
+        </div>
+    </div>
+</ng-view>
+
+
+
+
+
+	<footer>
+		<span>View Friends</span>
+		<span>Find Friends</span>
+		<span>Update Profile</span>
+	</footer>
+
+<script src="../../JS-Librarys/angular.js"></script>
+<script src="js/js.js"></script>
+<script src="js/router.js"></script>
+<script src="js/entryController.js"></script>
+<script src="js/newUserService.js"></script>
+
 </body>
 </html>
